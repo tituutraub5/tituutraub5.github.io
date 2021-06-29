@@ -8,12 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://tituutraub5.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 1</title>
-      <link>https://tituutraub5.github.io/docs/post01/</link>
+      <title>1. Post</title>
+      <link>https://tituutraub5.github.io/docs/1.-post/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://tituutraub5.github.io/docs/post01/</guid>
+      <guid>https://tituutraub5.github.io/docs/1.-post/</guid>
       <description>Contenido de mi post 1 con hugo</description>
+    </item>
+    
+    <item>
+      <title>2. Planimetría</title>
+      <link>https://tituutraub5.github.io/docs/2.-planimetr%C3%ADa/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://tituutraub5.github.io/docs/2.-planimetr%C3%ADa/</guid>
+      <description>Contenido de planimetría</description>
     </item>
     
     <item>
