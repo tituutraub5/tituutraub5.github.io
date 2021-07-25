@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>4. Mecanizado 2.5 Ejes - María Jesús Traub - Taller Fabricación 2021</title>
+  <title>5. Simulación y Diseño Generativo - María Jesús Traub - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://tituutraub5.github.io/favicon.png">
@@ -102,8 +102,12 @@
       <a href="https://tituutraub5.github.io/docs/3.-mecanizado_cnc/">3. Mecanizado cnc</a>
     </li>
     
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/5.-simulaci%C3%B3n-y-dise%C3%B1o-generativo/">4. Mecanizado 2.5 Ejes</a>
+    </li>
+    
     <li class="active ">
-      <a href="https://tituutraub5.github.io/docs/4.-mecanizado-2.5-ejes/">4. Mecanizado 2.5 Ejes</a>
+      <a href="https://tituutraub5.github.io/docs/4.-mecanizado-2.5-ejes/">5. Simulación y Diseño Generativo</a>
     </li>
     
     <li class="">
@@ -121,16 +125,22 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">4. Mecanizado 2.5 Ejes</h1>
+<h1 class="title">5. Simulación y Diseño Generativo</h1>
 <div class="content ">
-  <h2 id="encargo-mecanizado-cnc-para-el-respaldo-de-la-silla">Encargo Mecanizado CNC para el respaldo de la silla</h2>
-<h3 id="1-introducción">1. Introducción</h3>
-<p>Este trabajo trata de cortar el respaldo de la silla que hicimos la clase pasada. Este respaldo, al ser curvilíneo, se necesita alinear hacia el eje x y z para que la parábola o &ldquo;guatita&rdquo; de la silla sea el punto menor a cortar y los costados los puntos máximos (como una parábola).</p>
+  <h2 id="prueba-de-diseño-generativo-y-simulación">Prueba de diseño generativo y simulación</h2>
+<h3 id="introducción">Introducción</h3>
+<p>El diseño generativo es una Herramienta de innovación, una nueva forma de abordar la manera en que se construye y se crea el mundo a nuestro alrededor. Es una herramienta que ha venido tomando mucha fuerza en campos como la ingeniería, el arte, la arquitectura y el Diseño.</p>
+<blockquote>
+<p>El diseño generativo consiste en crear modelos adaptables restringidos por unas limitaciones de diseño marcadas por unos parámetros introducidos en un software digital. Estos parámetros o variables, como volúmenes, fuerzas, límites espaciales o incluso temperaturas, se pueden manipular mediante algoritmos y obtener resultados increíbles de diseños originales y versátiles.</p>
+</blockquote>
+<p>Fuente: <a href="http://www.bloquetech.com">www.bloquetech.com</a></p>
+<p>Para aprender a usar el diseño generativo usamos dos ejemplos, el primero es un ala de avión para entender la pieza, soporte y fuerza que necesita para soportar 1000 N.</p>
+<p>El segundo, es una pieza bracket que se utilizará para hacer el diseño generativo en las partes que se necesita soporte.</p>
 <hr>
-<h3 id="respaldo">Respaldo</h3>
+<h3 id="ala-completa">Ala completa</h3>
 <div>
     <iframe 
-    src='https://a360.co/36Bj1Bz'
+    src='https://a360.co/3i1YDjB'
     width="100%" 
     height="450" 
     allowfullscreen="true" 
@@ -139,10 +149,13 @@
     frameborder="0">
     </iframe>    
 </div>
-<h3 id="tabla-de-madera-en-conjunto-con-el-respaldo">Tabla de madera en conjunto con el respaldo</h3>
+<p>Este es el diseño original, donde se planteará el problema de simulación de una parte para poder entender las fuerzas que actúan en esta.</p>
+<p>La problemática principal es hacer más liviana la pieza con el propósito de disminuír la carga y combustible del avión.</p>
+<p>Primero vamos a optimizar una piesa que se repite mucho en el diseño, por lo tanto la vamos a aislar de las demás para poder seguir trabajando con esta.</p>
+<h2 id="pieza-aislada">Pieza Aislada</h2>
 <div>
     <iframe 
-    src='https://a360.co/3kmXvZo'
+    src='https://a360.co/3y5mvZ5'
     width="100%" 
     height="450" 
     allowfullscreen="true" 
@@ -151,23 +164,95 @@
     frameborder="0">
     </iframe>    
 </div>
-<p>Como dijimos anteriormente, la madera debe cubrir el respaldo, por lo que utilizaremos como mínimo una tabla de 55 cm x 5,3 cm x 32,5 cm</p>
-<h3 id="2-objetos">2. Objetos</h3>
-<p>Para poder cortar la plancha de 55 cm x 5,3 cm x 32,5 cm necesitaremos una fresa con las siguientes especificaciones: Autodesk Generic 3-Axis (#1 – 6 mm diámetro Flat Endmill) con una longitud de bajo del soporte de 40 mm.</p>
-<p>Esta fresa debe pasar múltiples veces en la plancha para poder hacer el corte.</p>
-<p><img src="/img/fresalarga.png" alt="Imagen Simple"></p>
-<h3 id="3-proceso-de-corte-del-respaldo">3 Proceso de corte del respaldo</h3>
+<h3 id="1-planteamiento-del-problema">1. Planteamiento del problema</h3>
+<p>Primero, debemos pasar a el segmento de simulación y vamos a hacer un nuevo estudio, seleccionando un estrés estático de la pieza.</p>
+<p><img src="/img/DG/DG1.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG2.jpg" alt="Imagen Simple"></p>
+<p>Segundo, vamos a definir el material a utilizar, el cual será un acero.</p>
+<p><img src="/img/DG/DG3.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG4.jpg" alt="Imagen Simple"></p>
+<p>Tercero, vamos a seleccionar las restricciones, que son las partes de la pieza que van a estar fijas al ensamble y no van a tener movimiento.</p>
+<p><img src="/img/DG/DG5.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG6.jpg" alt="Imagen Simple"></p>
+<p>Cuarto, vamos a seleccionar las cargas y va a ser la parte inferior del ala que estará soportando todo el peso del avión. Le daremos una carga de 1000 N.</p>
+<p><img src="/img/DG/DG7.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG8.jpg" alt="Imagen Simple"></p>
+<p>Quinto, vamos a hacer un pre-check, lo cual nos dice que los componentes escogidos para la simulación son suficientes para representar la realidad del objeto con diversas condiciones.
+Por último selecionamos resolver para poder visualizar la simulación.</p>
+<p><img src="/img/DG/DG9.jpg" alt="Imagen Simple"></p>
+<h3 id="2-simulación-del-problema">2. Simulación del problema</h3>
+<p><img src="/img/DG/DG.png" alt="Imagen Simple"></p>
+<p>Como vemos en la imagen, el color amarillo indica las partes críticas de la pieza donde se puede desformar.</p>
+<hr>
+<p>Para seguir con la propuesta de diseño generativo y guía para el rediseño de la pieza, usaremos como ejemplo el segundo objeto Bracket.</p>
 <div>
-    <video 
+    <iframe 
+    src='https://a360.co/3eNSsxF'
     width="100%" 
     height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/videjes.mp4"  type="video/mp4">
-    </video>
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
 </div>
-<hr>
-<p>Como vemos en el video, el corte de las partes de la silla comienza con uncorte adaptativo para poder hacer la parábola superior del asiento. Siguiente, se hace un parallel horizontal y vertical para perfeccionar.</p>
-<p>Después de hacer lo del video, uno debe cortar la pieza en 90° para poder hacer la parábola inferior. Esto no lo hace la máquina cnc, por lo que se debe hacer manualmente.</p>
+<p>Primero vamos a escoger el diseño GE Bracket que está en nuestra carpeta de diseño generativo. Después vamos a la sección de diseño generativo.</p>
+<p><img src="/img/DG/DG10.jpg" alt="Imagen Simple"></p>
+<p>Segundo, vamos a hacer un nuevo estudio donde vamos a asignar los componentes.</p>
+<p><img src="/img/DG/DG11.jpg" alt="Imagen Simple"></p>
+<p>El primer componente es que vamos a escoger las geometrías que queremos preservar. Las piezas seleccionadas mantendrán su forma y se generará una conección entre ellas.</p>
+<p><img src="/img/DG/DG12.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG13.jpg" alt="Imagen Simple"></p>
+<p>El segundo componente es obstáculos de geometría, que nos sirve para seleccionar aquellas partes donde no puede haber material nuevo generativo (no puede haber roce)</p>
+<p><img src="/img/DG/DG14.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG15.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG16.jpg" alt="Imagen Simple"></p>
+<p>El tercer componente es asignar restricciones estructurales, y como dijimos anteriormente son las partes de la pieza que van a estar fijas al ensamble y no van a tener movimiento.</p>
+<p><img src="/img/DG/DG17.jpg" alt="Imagen Simple"></p>
+<p>El cuarto componente son las cargas, que se refiere a qué parte del objeto o ensamble se va a recibir la fuerza o el esfuerzo del diseño. En el eje Z se reciben -1000 N.</p>
+<p><img src="/img/DG/DG18.jpg" alt="Imagen Simple">
+<img src="/img/DG/DG19.JPG" alt="Imagen Simple"></p>
+<p>El quinto, es el objetivo que vamos a declararle a la pieza, y dentro de las 2 posibilidades que se nos presentan, escogeremos minimizar la masa de la pieza con un factor de seguridad de 2 (Relación de resistencia de la pieza contra la fuerza, donde se asegure el doble de la carga que reciba el objeto)</p>
+<p><img src="/img/DG/DG20.JPG" alt="Imagen Simple"></p>
+<p>Sexto, vamos a ir al criterio de manufactura para escoger el criterio aditivo con un ángulo mínimo de 45° y grosor mínimo de 3 mm, y con un volumen de pieza de 2500 pcs.</p>
+<p><img src="/img/DG/DG21.JPG" alt="Imagen Simple">
+<img src="/img/DG/DG22.JPG" alt="Imagen Simple"></p>
+<p>Séptimo, vamos al comando de materiales donde vamos a probar el diseño generativo con cuatro opciones:</p>
+<ol>
+<li>Aluminio</li>
+<li>Titanio</li>
+<li>Iconel</li>
+<li>Orgasol (plástico)</li>
+</ol>
+<p><img src="/img/DG/DG23.JPG" alt="Imagen Simple">
+<img src="/img/DG/DG24.JPG" alt="Imagen Simple"></p>
+<p>Cuando tengamos los componentes listos, pasamos al pre-check y nos va a decir si está todo bien. En el caso que esté todo correcto vamos a previsualizar el elemento que se va a conformar.</p>
+<p><img src="/img/DG/DG25.JPG" alt="Imagen Simple">
+<img src="/img/DG/DG26.JPG" alt="Imagen Simple">
+<img src="/img/DG/DG27.JPG" alt="Imagen Simple"></p>
+<p>Una vez realizado esto, vamos a poner generar y nos va a aparecer el modelo que queremos que se realice.</p>
+<p><img src="/img/DG/DG28.JPG" alt="Imagen Simple">
+<img src="/img/DG/DG29.jpg" alt="Imagen Simple"></p>
+<p><img src="/img/DG/DG_.png" alt="Imagen Simple"></p>
+<p>Siguiente, el servidor de autodesk estará procesando este problema de diseño en el servidor de la nube.</p>
+<p>Una vez listo, se nos mostrarán las diferentes iteraciones que se formaron a través del diseño generativo</p>
+<p><img src="/img/DG/DG__.png" alt="Imagen Simple"></p>
+<h3 id="3-propuesta-de-diseño-generativo">3. Propuesta de diseño generativo</h3>
+<p>Escogemos una para poder analizar el diseño, en este caso escogí la de aluminio y quedó así:</p>
+<p><img src="/img/DG/DG___.png" alt="Imagen Simple"></p>
+<h3 id="4-guía-de-rediseño-de-la-pieza">4. Guía de Rediseño de la pieza</h3>
+<p>Vamos a crear un design outcome para poder visualizar la pieza como un objeto.</p>
+<div>
+    <iframe 
+    src='https://a360.co/3rvIAxA'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
 
 </div>
 </div>
