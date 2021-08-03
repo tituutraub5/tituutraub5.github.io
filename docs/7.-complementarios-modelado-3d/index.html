@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>7. Complementarios 1- Modelado Superficies - María Jesús Traub - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://tituutraub5.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://tituutraub5.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://tituutraub5.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/1.-post/">1. Post</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/2.-planimetr%C3%ADa/">2. Planimetría</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/3.-mecanizado_cnc/">3. Mecanizado cnc</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/5.-simulaci%C3%B3n-y-dise%C3%B1o-generativo/">4. Mecanizado 2.5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/4.-mecanizado-2.5-ejes/">5. Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/6.-impresi%C3%B3n-3d-cura/">6. Impresión 3D CURA</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://tituutraub5.github.io/docs/7.-complementarios-modelado-3d/">7. Complementarios 1- Modelado Superficies</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/8.-complementarios-creaci%C3%B3n-molde/">8. Complementarios 2- Creación de Moldes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://tituutraub5.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">7. Complementarios 1- Modelado Superficies</h1>
+<div class="content ">
+  <h2 id="modelado-3d-superficies">Modelado 3D Superficies</h2>
+<p>Es el modelado de superficies, donde se le asignan materialidades para que tenga espesor y pueda ser fabricado.</p>
+<h2 id="modelo-final">Modelo Final</h2>
+<div>
+    <iframe 
+    src='https://a360.co/3yAtDxb'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<hr>
+<h2 id="pasos-a-realizar">Pasos a realizar</h2>
+<p>Primero vamos a ir al módulo de superficies y hacer un sketch nuevo en el plano top.</p>
+<p><img src="/img/complem/sup1.png" alt="Imagen Simple"></p>
+<p>Después con Spline hacemos una geometría simple y terminamos el boceto.</p>
+<p><img src="/img/complem/sup2.png" alt="Imagen Simple"></p>
+<p>Después hacemos un plano de desfase de construcción y vamos a seleccionar la cara y desplazarla en la siguiente proporción.</p>
+<p><img src="/img/complem/sup3.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup4.png" alt="Imagen Simple"></p>
+<p>Luego hacemos un nuevo sketch en la supercicie creada. En esta segunda superficie vamos a hacer otra geometría cerrada similar a la anterior y terminamos el boceto.</p>
+<p><img src="/img/complem/sup5.png" alt="Imagen Simple"></p>
+<p>Terminado eso, hacemos un loft entre las curvas para generar una superficie</p>
+<p><img src="/img/complem/sup6.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup7.png" alt="Imagen Simple"></p>
+<p>Luego, vamos a hacer un nuevo sketch en el lado frontal de la figura y vamos a dibujar otra geometría.</p>
+<p><img src="/img/complem/sup8.png" alt="Imagen Simple"></p>
+<p>Y dentro del módulo surface vamos a utilizar el extrude para los dos lados.</p>
+<p><img src="/img/complem/sup9.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup10.png" alt="Imagen Simple"></p>
+<p>Después vamos a ir al módulo de sólido y haremos una separación de cuerpos donde la superfice a separar es nuestro objeto original y la superfice que corta es la que pasa entremedio de esta.</p>
+<p><img src="/img/complem/sup11.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup12.png" alt="Imagen Simple"></p>
+<p>Después vamos a hacer un corte para eliminar el exceso (lo que está en rojo)</p>
+<p><img src="/img/complem/sup13.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup14.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup15.png" alt="Imagen Simple"></p>
+<p>Terminado esto vamos a utilizar la herramienta de parche que se encuentra en el módulo de superficie para tapar la cara superior y posterior.</p>
+<p><img src="/img/complem/sup16.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup17.png" alt="Imagen Simple"></p>
+<p>Siguiente vamos a ir a coser para que las caras se unan completamente entre ellas y se genere solo 1 objeto en vez de 4 caras por separadas.</p>
+<p><img src="/img/complem/sup18.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup19.png" alt="Imagen Simple"></p>
+<p>Después vamos a ir a el módulo de sólido para poder hacer un empalme en las esquinas con en propósito de aumentar las curvaturas.</p>
+<p><img src="/img/complem/sup20.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup21.png" alt="Imagen Simple"></p>
+<p>Después usaremos el comando de vaciado para transformar el sólido en una cáscara.</p>
+<p><img src="/img/complem/sup22.png" alt="Imagen Simple"></p>
+<p><img src="/img/complem/sup23.png" alt="Imagen Simple"></p>
+<p>Y listo! tenemos nuestro objeto. Este podemos editarlo como queramos con los puntos de control.</p>
+<hr>
+<hr>
+<h3 id="galería-de-fotos-explicativas">Galería de fotos explicativas</h3>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup1.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup1.png" alt="Sup1" />
+				    </div>
+			      <figcaption>
+		          <p>Sup1</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup10.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup10.png" alt="Sup10" />
+				    </div>
+			      <figcaption>
+		          <p>Sup10</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup10.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup11.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup11.png" alt="Sup11" />
+				    </div>
+			      <figcaption>
+		          <p>Sup11</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup11.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup12.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup12.png" alt="Sup12" />
+				    </div>
+			      <figcaption>
+		          <p>Sup12</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup12.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup13.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup13.png" alt="Sup13" />
+				    </div>
+			      <figcaption>
+		          <p>Sup13</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup13.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup14.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup14.png" alt="Sup14" />
+				    </div>
+			      <figcaption>
+		          <p>Sup14</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup14.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup15.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup15.png" alt="Sup15" />
+				    </div>
+			      <figcaption>
+		          <p>Sup15</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup15.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup16.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup16.png" alt="Sup16" />
+				    </div>
+			      <figcaption>
+		          <p>Sup16</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup16.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup17.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup17.png" alt="Sup17" />
+				    </div>
+			      <figcaption>
+		          <p>Sup17</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup17.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup18.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup18.png" alt="Sup18" />
+				    </div>
+			      <figcaption>
+		          <p>Sup18</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup18.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup19.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup19.png" alt="Sup19" />
+				    </div>
+			      <figcaption>
+		          <p>Sup19</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup19.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup2.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup2.png" alt="Sup2" />
+				    </div>
+			      <figcaption>
+		          <p>Sup2</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup20.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup20.png" alt="Sup20" />
+				    </div>
+			      <figcaption>
+		          <p>Sup20</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup20.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup21.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup21.png" alt="Sup21" />
+				    </div>
+			      <figcaption>
+		          <p>Sup21</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup21.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup22.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup22.png" alt="Sup22" />
+				    </div>
+			      <figcaption>
+		          <p>Sup22</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup22.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup23.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup23.png" alt="Sup23" />
+				    </div>
+			      <figcaption>
+		          <p>Sup23</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup23.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup3.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup3.png" alt="Sup3" />
+				    </div>
+			      <figcaption>
+		          <p>Sup3</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup4.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup4.png" alt="Sup4" />
+				    </div>
+			      <figcaption>
+		          <p>Sup4</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup4.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup5.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup5.png" alt="Sup5" />
+				    </div>
+			      <figcaption>
+		          <p>Sup5</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup5.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup6.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup6.png" alt="Sup6" />
+				    </div>
+			      <figcaption>
+		          <p>Sup6</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup6.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup7.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup7.png" alt="Sup7" />
+				    </div>
+			      <figcaption>
+		          <p>Sup7</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup7.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup8.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup8.png" alt="Sup8" />
+				    </div>
+			      <figcaption>
+		          <p>Sup8</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup8.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/complem//sup9.png');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/complem//sup9.png" alt="Sup9" />
+				    </div>
+			      <figcaption>
+		          <p>Sup9</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/complem//sup9.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
