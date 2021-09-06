@@ -152,7 +152,12 @@
 <h1 class="title">4. Mecanizado 2.5 Ejes</h1>
 <div class="content ">
   <h2 id="encargo-mecanizado-cnc-para-el-respaldo-de-la-silla">Encargo Mecanizado CNC para el respaldo de la silla</h2>
-<h3 id="1-introducción">1. Introducción</h3>
+<h2 id="1-introducción">1. Introducción</h2>
+<p><img src="/img/mec/5.png" alt="Imagen Simple"></p>
+<p>El mecanizado CNC son máquinas-herramientas automatizadas que se controlan por el computador. Mediante herramientas rotativas de múltiples filos de corte y con poquísima intervención humana, pueden llevar a cabo diferentes operaciones sobre una pieza.
+Este tipo de mecanizado se ha aplicado en múltiples operaciones de desbaste o de arranque de viruta. Pero también torneado, fresado, taladrado, incluso complementando todas ellas en una sola máquina.</p>
+<p>Existen dos tipos de máquinas CNC: verticales y horizontales. La diferencia radica en la posición del motor del husillo. El tamaño también dependerá según el tipo de pieza a fabricar. Puede ser de 3, 4 y 5 ejes. A mayor número de ejes, mayor rapidez de producción de piezas más complejas.</p>
+<p>Todas las máquinas herramientas pueden ser adaptadas a un proceso de fabricación mediante comandos CNC. El mantener un control y una lectura constante de los estados operacionales, lo hace un proceso de fabricación seguro. Tiene además mucha más precisión y calidad en los diversos acabados superficiales obtenidos.</p>
 <p>Este trabajo trata de cortar el respaldo de la silla que hicimos la clase pasada. Este respaldo, al ser curvilíneo, se necesita alinear hacia el eje x y z para que la parábola o &ldquo;guatita&rdquo; de la silla sea el punto menor a cortar y los costados los puntos máximos (como una parábola).</p>
 <hr>
 <h3 id="respaldo">Respaldo</h3>
@@ -180,11 +185,48 @@
     </iframe>    
 </div>
 <p>Como dijimos anteriormente, la madera debe cubrir el respaldo, por lo que utilizaremos como mínimo una tabla de 55 cm x 5,3 cm x 32,5 cm</p>
-<h3 id="2-objetos">2. Objetos</h3>
+<h2 id="2-objetos">2. Objetos</h2>
 <p>Para poder cortar la plancha de 55 cm x 5,3 cm x 32,5 cm necesitaremos una fresa con las siguientes especificaciones: Autodesk Generic 3-Axis (#1 – 6 mm diámetro Flat Endmill) con una longitud de bajo del soporte de 40 mm.</p>
 <p>Esta fresa debe pasar múltiples veces en la plancha para poder hacer el corte.</p>
 <p><img src="/img/fresalarga.png" alt="Imagen Simple"></p>
-<h3 id="3-proceso-de-corte-del-respaldo">3 Proceso de corte del respaldo</h3>
+<h2 id="3-proceso-de-corte-del-respaldo">3. Proceso de corte del respaldo</h2>
+<ul>
+<li><em>Paso 0 :</em></li>
+</ul>
+<p>Separar el respaldo, y alinearlo al plano xy.</p>
+<ul>
+<li><em>Paso 1 :</em></li>
+</ul>
+<p>Crear un pequeño cuadro que cubra por completo el respaldo que queremos mecanizar.  Esto se hace con sketch y luego extrude para darle la forma al rectangulo.</p>
+<ul>
+<li><em>Paso 2 :</em></li>
+</ul>
+<p>Cambiaremos a la sección de manofactura, donde vamos a establecer el formato de corte. Para esto usaremos la misma maquina del mecanizado anterior (Autodesk generic 3 axis).</p>
+<ul>
+<li><em>Paso 3 :</em></li>
+</ul>
+<p>Volviendo a la sección de design, vamos a establecer la forma del rectángulo para que la máquina reconozca el espacio donde y donde no debe contornear.</p>
+<ul>
+<li><em>Paso 4 :</em></li>
+</ul>
+<p>Creamos un sketch seleccionando la parte superior de nuestro rectángulo, en base a el eje x,y,z.</p>
+<ul>
+<li><em>Paso 5 :</em></li>
+</ul>
+<p>Terminado esto, vamos a “create” &ndash;&gt; “Project/include” &mdash;&gt; “Project” &mdash; &gt; “Selection filter&quot; y seleccionamos “Body”.</p>
+<ul>
+<li><em>Paso 6 :</em></li>
+</ul>
+<p>Seleccionamos en las carpetas del costado en “Bodies” a nuestro Respaldo.</p>
+<ul>
+<li><em>Paso 7 :</em></li>
+</ul>
+<p>Ahora en la sección de manufactura seleccionamos &ldquo;adaptative clearing&rdquo;, y marcando nos pide la fresia que queremos utilizar. Vamos a escoger la misma que usamos para hacer las otras piezas de la silla</p>
+<h5 id="diametro--6-mm-flute-length--20-mm-overall-length--63-mm-y-de-tipo-flat-end-mill">Diametro = 6 mm, Flute length = 20 mm, Overall length = 63 mm y de tipo Flat end mill</h5>
+<ul>
+<li><em>Paso 8 :</em></li>
+</ul>
+<p>Usaremos “Parallel” para poder empezar a mecanizar el respaldo de nuestra silla fresia.</p>
 <div>
     <video 
     width="100%" 
@@ -196,6 +238,143 @@
 <hr>
 <p>Como vemos en el video, el corte de las partes de la silla comienza con uncorte adaptativo para poder hacer la parábola superior del asiento. Siguiente, se hace un parallel horizontal y vertical para perfeccionar.</p>
 <p>Después de hacer lo del video, uno debe cortar la pieza en 90° para poder hacer la parábola inferior. Esto no lo hace la máquina cnc, por lo que se debe hacer manualmente.</p>
+<h2 id="4-silla-fresia">4. Silla Fresia</h2>
+<p><img src="/img/4.png" alt="Imagen Simple"></p>
+<p><img src="/img/Planimetriamc/2.png" alt="Imagen Simple"></p>
+<p><img src="/img/6.png" alt="Imagen Simple"></p>
+<h2 id="5-corte-real">5. Corte real</h2>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//18%20%281%29.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//18%20%281%29.jpg" alt="18 (1)" />
+				    </div>
+			      <figcaption>
+		          <p>18 (1)</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//18%20%281%29.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//4.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//4.jpg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//4.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//5.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//5.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//5.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//6.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//6.jpg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//6.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//7.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//7.jpg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//7.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://tituutraub5.github.io//img/2.5//8.jpg');" >
+				      <img itemprop="thumbnail" src="https://tituutraub5.github.io//img/2.5//8.jpg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://tituutraub5.github.io//img/2.5//8.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
 
 </div>
 </div>
